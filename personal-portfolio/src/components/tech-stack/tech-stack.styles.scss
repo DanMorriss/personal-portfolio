@@ -1,0 +1,26 @@
+.tech-stack-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .tech-stack-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .techStackImage {
+      height: 9rem;
+      width: 9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+      border-radius: 1rem;
+      background: #ffffff;
+      box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+      text-align: center;
+    }
+  }
+}

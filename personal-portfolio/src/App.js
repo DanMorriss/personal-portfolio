@@ -1,10 +1,15 @@
-import "./App.css";
+import React from "react";
+
+import Hero from "./components/hero/hero.component";
+import Projects from "./components/projects/projects.component";
+import TechStack from "./components/tech-stack/tech-stack.component";
 
 function App() {
   return (
     <div className="App">
-      <h1>Dan Morriss</h1>
-      <p>Full Stack Developer</p>
+      <Hero />
+      <TechStack />
+      <Projects />
     </div>
   );
 }
