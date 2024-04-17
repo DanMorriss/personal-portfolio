@@ -81,21 +81,40 @@
     }
   }
 
-  .highlights-mobile {
+  .mobile-mockup {
     position: absolute;
-    right: 0;
+    right: -3rem;
     height: 30rem;
   }
 
-  .highlights-tablet {
+  .tablet-mockup {
     position: absolute;
     right: 28rem;
   }
 
-  .highlights-laptop {
+  .laptop-mockup {
     position: absolute;
-    right: 8rem;
+    right: 5rem;
     height: 20rem;
+  }
+
+  .desktop-mockup {
+    position: absolute;
+    right: 12rem;
+    height: 25rem;
+  }
+
+
+  .retro-laptop-mockup {
+    position: absolute;
+    right: -3rem;
+    height: 20rem;
+  }
+
+  .retro-desktop-mockup {
+    position: absolute;
+    right: 25rem;
+    height: 25rem;
   }
 
 
