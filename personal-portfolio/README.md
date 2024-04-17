@@ -74,3 +74,5 @@ Install sass
 ```
 npm i sass --save-dev
 ```
+
+https://react-scroll-parallax.damnthat.tv/docs/intro

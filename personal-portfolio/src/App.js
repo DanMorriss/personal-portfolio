@@ -1,15 +1,24 @@
-import React from "react";
-
-import Hero from "./components/hero/hero.component";
-import Projects from "./components/projects/projects.component";
-import TechStack from "./components/tech-stack/tech-stack.component";
+import "./app.styles.scss";
+import LandingDesktop from "./pages/landing-desktop";
 
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <TechStack />
-      <Projects />
+      <LandingDesktop />
+      {/* <Parallax pages={3}>
+        <ParallaxLayer offset={0} speed={0.5}>
+          {" "}
+          <Hero />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={1.5}>
+          {" "}
+          <TechStack />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.1} speed={2.5}>
+          {" "}
+          <Projects />
+        </ParallaxLayer>
+      </Parallax>*/}
     </div>
   );
 }
