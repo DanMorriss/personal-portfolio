@@ -127,14 +127,19 @@ function LandingDesktop() {
               <div>
                 <Image src={dan_image} roundedCircle className="dan-image" />
                 <div className="links-container">
-                  <a href="https://github.com/danmorriss" target="_blank">
-                    <i class="fa-brands fa-github"></i>
+                  <a
+                    href="https://github.com/danmorriss"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-github"></i>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/morrissdaniel/"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i className="fa-brands fa-linkedin"></i>
                   </a>
                 </div>
               </div>
