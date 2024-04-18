@@ -1,5 +1,5 @@
 import "./hero.styles.scss";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { ParallaxLayer } from "@react-spring/parallax";
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
         <h1>Dan Morriss</h1>
       </ParallaxLayer>
       <ParallaxLayer offset={0.5} speed={1.5}>
-        <p>{"< Full Stack Developer />"}</p>
+        <h2>{"< Full Stack Developer />"}</h2>
       </ParallaxLayer>
     </div>
   );
