@@ -76,3 +76,5 @@ npm i sass --save-dev
 ```
 
 https://react-scroll-parallax.damnthat.tv/docs/intro
+
+https://github.com/atomiks/tippyjs-react

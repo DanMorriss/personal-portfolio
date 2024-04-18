@@ -54,9 +54,9 @@
   justify-content: center;
 
   .about-card {
-    width: 50rem;
+    width: 60rem;
     padding: 1rem;
-    margin-top: 30vh;
+    margin-top: 20vh;
     box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
     border-radius: 1rem;
     background-color: #fffffff2;
@@ -85,68 +85,69 @@
     }
   }
 }
+.project-description {
+  width: 40vw;
+  position: absolute;
+  top: 20vh;
+  padding-left: 3rem;
 
+  h1 {
+    font-size: 4rem;
+  font-family: "Workbench", sans-serif;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+  }
 
-  .project-description {
-    width: 40vw;
-    position: absolute;
-    top: 20vh;
-    padding-left: 3rem;
-
-    h1 {
-      font-size: 4rem;
-    font-family: "Workbench", sans-serif;
+  p {
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-size: 1.7rem;
     filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
-    }
+  }
 
-    p {
-      font-family: "Jersey 10 Charted", sans-serif;
-      font-size: 1.7rem;
-      filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
-    }
-
-    .project-tech-stack {
-      img {
-        height: 5rem;
-        padding: 0.7rem;
-      }
+  .project-tech-stack {
+    img {
+      height: 5rem;
+      padding: 0.7rem;
     }
   }
+}
 
-  .mobile-mockup {
-    position: absolute;
-    right: -3rem;
-    height: 30rem;
-  }
+.mobile-mockup {
+  position: absolute;
+  right: -3rem;
+  height: 30rem;
+}
 
-  .tablet-mockup {
-    position: absolute;
-    right: 28rem;
-  }
+.tablet-mockup {
+  position: absolute;
+  right: 28rem;
+}
 
-  .laptop-mockup {
-    position: absolute;
-    right: 5rem;
-    height: 20rem;
-  }
+.laptop-mockup {
+  position: absolute;
+  right: 5rem;
+  height: 20rem;
+}
 
-  .desktop-mockup {
-    position: absolute;
-    right: 12rem;
-    height: 25rem;
-  }
+.desktop-mockup {
+  position: absolute;
+  right: 12rem;
+  height: 25rem;
+}
 
 
-  .retro-laptop-mockup {
-    position: absolute;
-    right: -3rem;
-    height: 20rem;
-  }
+.retro-laptop-mockup {
+  position: absolute;
+  right: -3rem;
+  height: 20rem;
+}
 
-  .retro-desktop-mockup {
-    position: absolute;
-    right: 25rem;
-    height: 25rem;
-  }
+.retro-desktop-mockup {
+  position: absolute;
+  right: 25rem;
+  height: 25rem;
+}
 
+.tooltip {
+  background-color: red;
+}
 

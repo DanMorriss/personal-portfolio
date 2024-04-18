@@ -1,6 +1,9 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Image from "react-bootstrap/Image";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
+import "tippy.js/animations/scale.css";
 
 import Hero from "../components/hero/hero.component";
 import "./landing-desktop.styles.css";
@@ -121,16 +124,22 @@ function LandingDesktop() {
         </div>
 
         {/* About Card */}
-        <ParallaxLayer sticky={{ start: 0.7, end: 1.2 }}>
+        <ParallaxLayer sticky={{ start: 0.9, end: 1.4 }}>
           <div className="about-container">
             <div className="about-card">
               <div>
-                <Image src={dan_image} roundedCircle className="dan-image" />
+                <Image
+                  src={dan_image}
+                  roundedCircle
+                  className="dan-image"
+                  alt="avatar image of Dan"
+                />
                 <div className="links-container">
                   <a
                     href="https://github.com/danmorriss"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="github link"
                   >
                     <i className="fa-brands fa-github"></i>
                   </a>
@@ -138,6 +147,7 @@ function LandingDesktop() {
                     href="https://www.linkedin.com/in/morrissdaniel/"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="linkedin link"
                   >
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
@@ -146,15 +156,18 @@ function LandingDesktop() {
 
               <div>
                 <p>
-                  Hey, I'm Dan, a full-stack developer with 2 years experience
-                  building dynamic, scalable websites. I enjoy using React for
-                  the frontend and Django REST Framework for the backend.
+                  Hey, I'm Dan, a versatile Full Stack Developer with a passion
+                  for problem-solving and continuous learning. My journey into
+                  the world of tech began after years as a touring musician and
+                  teacher, where I honed my skills in web development by
+                  crafting websites for bands and local businesses.
                 </p>
                 <p>
-                  Prior to my venture into tech, I was a touring musician and
-                  teacher building websites on the side for bands. My background
-                  enhances my development process with creativity and
-                  adaptability, bridging the worlds of artistry and technology.
+                  In 2023, I further solidified my expertise by completing a
+                  diploma in Full Stack Software Development with The Code
+                  Institute. This comprehensive program equipped me with the
+                  technical prowess to build dynamic, scalable websites while
+                  leveraging my background in creativity and adaptability.
                 </p>
               </div>
             </div>
@@ -206,12 +219,31 @@ function LandingDesktop() {
               space to share the highlights of their day and connect with other.
             </p>
             <div className="project-tech-stack">
-              <Image src={javascript_logo} alt="javascript logo" />
-              <Image src={react_logo} alt="react logo" className="logo-small" />
-              <Image src={rest_logo} alt="django rest framework logo" />
-              <Image src={bootstrap_logo} alt="bootstrap logo" />
-              <Image src={cloudinary_logo} alt="cloudinary logo" />
-              <Image src={heroku_logo} alt="heroku logo" />
+              <Tippy content="JavaScript" animation="scale">
+                <Image src={javascript_logo} alt="javascript logo" />
+              </Tippy>
+              <Tippy content="React" animation="scale">
+                <Image
+                  src={react_logo}
+                  alt="react logo"
+                  className="logo-small"
+                />
+              </Tippy>
+              <Tippy content="Django REST Framework" animation="scale">
+                <Image src={rest_logo} alt="django rest framework logo" />
+              </Tippy>
+              <Tippy content="PostgreSQL" animation="scale">
+                <Image src={postgresql_logo} alt="postgresql logo" />
+              </Tippy>
+              <Tippy content="Bootstrap" animation="scale">
+                <Image src={bootstrap_logo} alt="bootstrap logo" />
+              </Tippy>
+              <Tippy content="Cloudinary" animation="scale">
+                <Image src={cloudinary_logo} alt="cloudinary logo" />
+              </Tippy>
+              <Tippy content="Heroku" animation="scale">
+                <Image src={heroku_logo} alt="heroku logo" />
+              </Tippy>
             </div>
           </div>
         </ParallaxLayer>
@@ -261,12 +293,24 @@ function LandingDesktop() {
               customers.
             </p>
             <div className="project-tech-stack">
-              <Image src={python_logo} alt="python logo" />
-              <Image src={django_logo} alt="django logo" />
-              <Image src={postgresql_logo} alt="postgresql logo" />
-              <Image src={bootstrap_logo} alt="bootstrap logo" />
-              <Image src={heroku_logo} alt="heroku logo" />
-              <Image src={cloudinary_logo} alt="cloudinary logo" />
+              <Tippy content="Python" animation="scale">
+                <Image src={python_logo} alt="python logo" />
+              </Tippy>
+              <Tippy content="Django" animation="scale">
+                <Image src={django_logo} alt="django logo" />
+              </Tippy>
+              <Tippy content="PostgreSQL" animation="scale">
+                <Image src={postgresql_logo} alt="postgresql logo" />
+              </Tippy>
+              <Tippy content="Bootstrap" animation="scale">
+                <Image src={bootstrap_logo} alt="bootstrap logo" />
+              </Tippy>
+              <Tippy content="Cloudinary" animation="scale">
+                <Image src={heroku_logo} alt="heroku logo" />
+              </Tippy>
+              <Tippy content="Heroku" animation="scale">
+                <Image src={cloudinary_logo} alt="cloudinary logo" />
+              </Tippy>
             </div>
           </div>
         </ParallaxLayer>
@@ -300,10 +344,18 @@ function LandingDesktop() {
               offer players an authentic and thrilling experience.
             </p>
             <div className="project-tech-stack">
-              <Image src={html_logo} alt="html logo" />
-              <Image src={css_logo} alt="css logo" />
-              <Image src={javascript_logo} alt="javascript logo" />
-              <Image src={kaboom_logo} alt="kaboom logo" />
+              <Tippy content="HTML" animation="scale">
+                <Image src={html_logo} alt="html logo" />
+              </Tippy>
+              <Tippy content="CSS" animation="scale">
+                <Image src={css_logo} alt="css logo" />
+              </Tippy>
+              <Tippy content="JavaScript" animation="scale">
+                <Image src={javascript_logo} alt="javascript logo" />
+              </Tippy>
+              <Tippy content="Kaboom.js" animation="scale">
+                <Image src={kaboom_logo} alt="kaboom logo" />
+              </Tippy>
             </div>
           </div>
         </ParallaxLayer>
