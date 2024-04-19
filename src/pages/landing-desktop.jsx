@@ -36,7 +36,7 @@ import retro_mashup_mayhem_desktop from "../public/images/projects/retro-mashup-
 function LandingDesktop() {
   return (
     <div className="App">
-      <Parallax pages={8}>
+      <Parallax pages={10}>
         <Hero />
         {/* About Section */}
         <div className="about-container">
@@ -166,7 +166,7 @@ function LandingDesktop() {
                   In 2023, I further solidified my expertise by completing a
                   diploma in Full Stack Software Development with The Code
                   Institute. This comprehensive program equipped me with the
-                  technical prowess to build dynamic, scalable websites while
+                  technical skills to build dynamic, scalable websites while
                   leveraging my background in creativity and adaptability.
                 </p>
               </div>
