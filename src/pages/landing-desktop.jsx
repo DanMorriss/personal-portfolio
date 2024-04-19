@@ -43,7 +43,7 @@ function LandingDesktop() {
           <div className="tech-stack-images">
             {/* Tech Stack Images */}
             <div className="techStackImage">
-              <ParallaxLayer offset={1} speed={0.5}>
+              <ParallaxLayer offset={2} speed={1}>
                 <Image
                   src={python_logo}
                   alt="python logo"
@@ -52,7 +52,7 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage">
-              <ParallaxLayer offset={1.5} speed={0.2}>
+              <ParallaxLayer offset={2.5} speed={0.9}>
                 <Image
                   src={django_logo}
                   alt="django logo"
@@ -61,7 +61,7 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage">
-              <ParallaxLayer offset={1.2} speed={0.7}>
+              <ParallaxLayer offset={2.2} speed={1.5}>
                 <Image
                   src={javascript_logo}
                   alt="javascript logo"
@@ -70,12 +70,12 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage">
-              <ParallaxLayer offset={1.7} speed={0.9}>
+              <ParallaxLayer offset={2} speed={0.8}>
                 <Image src={html_logo} alt="html logo" className="html-logo" />
               </ParallaxLayer>
             </div>
             <div className="techStackImage react-logo">
-              <ParallaxLayer offset={1} speed={0.3}>
+              <ParallaxLayer offset={2.1} speed={1.7}>
                 <Image
                   src={react_logo}
                   alt="react logo"
@@ -84,12 +84,12 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage django-logo">
-              <ParallaxLayer offset={1.5} speed={0.1}>
+              <ParallaxLayer offset={2.5} speed={0.6}>
                 <Image src={css_logo} alt="css logo" className="css-logo" />
               </ParallaxLayer>
             </div>
             <div className="techStackImage rest-logo">
-              <ParallaxLayer offset={1.1} speed={0.6}>
+              <ParallaxLayer offset={2.1} speed={0.1}>
                 <Image
                   src={rest_logo}
                   alt="django rest framework logo"
@@ -98,12 +98,12 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage postgresql-logo">
-              <ParallaxLayer offset={1.5} speed={0.4}>
+              <ParallaxLayer offset={2.4} speed={1.6}>
                 <Image src={git_logo} alt="git logo" className="git-logo" />
               </ParallaxLayer>
             </div>
             <div className="techStackImage bootstrap-logo">
-              <ParallaxLayer offset={1.8} speed={0.8}>
+              <ParallaxLayer offset={2.2} speed={0.7}>
                 <Image
                   src={bootstrap_logo}
                   alt="bootstrap logo"
@@ -112,7 +112,7 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage git-logo">
-              <ParallaxLayer offset={1.2} speed={1}>
+              <ParallaxLayer offset={2.1} speed={0.2}>
                 <Image
                   src={postgresql_logo}
                   alt="postgresql logo"
@@ -124,7 +124,7 @@ function LandingDesktop() {
         </div>
 
         {/* About Card */}
-        <ParallaxLayer sticky={{ start: 0.9, end: 1.4 }}>
+        <ParallaxLayer sticky={{ start: 1, end: 2 }}>
           <div className="about-container">
             <div className="about-card">
               <div>
@@ -177,7 +177,7 @@ function LandingDesktop() {
         {/* Projects Section */}
         {/* Highlights */}
 
-        <ParallaxLayer offset={3} speed={3.7}>
+        <ParallaxLayer offset={3.5} speed={0.4}>
           <Image
             src={highlights_mobile}
             alt="mobile view of the highlights site"
@@ -185,7 +185,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={0.9}>
+        <ParallaxLayer offset={3.5} speed={1}>
           <Image
             src={highlights_tablet}
             alt="tablet view of the highlights site"
@@ -193,7 +193,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={1.3}>
+        <ParallaxLayer offset={3.5} speed={1.5}>
           <Image
             src={highlights_laptop}
             alt="laptop view of the highlights site"
@@ -201,7 +201,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={2.7}>
+        <ParallaxLayer offset={3.5} speed={0.2}>
           <Image
             src={highlights_desktop}
             alt="desktop view of the highlights site"
@@ -209,7 +209,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: 2.5, end: 3 }}>
+        <ParallaxLayer sticky={{ start: 3, end: 4 }}>
           <div className="project-description">
             <h1>Highlights</h1>
             <h2>Social Network</h2>
@@ -250,7 +250,7 @@ function LandingDesktop() {
 
         {/* Nick's Barbershop */}
 
-        <ParallaxLayer offset={4.7} speed={3.7}>
+        <ParallaxLayer offset={5.5} speed={0.4}>
           <Image
             src={barbershop_mobile}
             alt="mobile view of the barbershop site"
@@ -258,7 +258,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.7} speed={0.9}>
+        <ParallaxLayer offset={5.5} speed={1}>
           <Image
             src={barbershop_tablet}
             alt="tablet view of the barbershop site"
@@ -266,7 +266,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.7} speed={1.3}>
+        <ParallaxLayer offset={5.5} speed={1.5}>
           <Image
             src={barbershop_laptop}
             alt="laptop view of the barbershop site"
@@ -274,7 +274,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.7} speed={2.7}>
+        <ParallaxLayer offset={5.5} speed={0.2}>
           <Image
             src={barbershop_desktop}
             alt="desktop view of the barbershop site"
@@ -282,7 +282,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: 4.1, end: 4.4 }}>
+        <ParallaxLayer sticky={{ start: 5, end: 6 }}>
           <div className="project-description">
             <h1>Nick's Barbershop</h1>
             <h2>Website & Booking System</h2>
@@ -317,7 +317,7 @@ function LandingDesktop() {
 
         {/* Retro Mashup Mayhem */}
 
-        <ParallaxLayer offset={6.2} speed={0.3}>
+        <ParallaxLayer offset={7.5} speed={0.3}>
           <Image
             src={retro_mashup_mayhem_laptop}
             alt="laptop view of retro mashup mayhem"
@@ -325,7 +325,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={6.2} speed={0.6}>
+        <ParallaxLayer offset={7.5} speed={0.6}>
           <Image
             src={retro_mashup_mayhem_desktop}
             alt="desktop view of retro mashup mayhem"
@@ -333,7 +333,7 @@ function LandingDesktop() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: 5.7, end: 6 }}>
+        <ParallaxLayer sticky={{ start: 7, end: 8 }}>
           <div className="project-description">
             <h1>Retro Mashup Mayhem</h1>
             <h2>Classic Platform Game</h2>
