@@ -8,7 +8,10 @@ const Hero = () => {
         <h1>Dan Morriss</h1>
       </ParallaxLayer>
       <ParallaxLayer offset={0.5} speed={1.5}>
-        <h2>{"< Full Stack Developer />"}</h2>
+        <h2>
+          <span className="poppins">{"<"}</span>Full Stack Developer
+          <span className="poppins">{"/>"}</span>
+        </h2>
       </ParallaxLayer>
     </div>
   );

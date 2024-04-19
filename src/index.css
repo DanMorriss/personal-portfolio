@@ -5,8 +5,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2 {
+  font-family: "Workbench", sans-serif;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+}
+
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jersey 10", sans-serif;
+  letter-spacing: 0.02rem;
+  filter: drop-shadow(0px 5px 5px rgba(211, 145, 255, 0.445));
 }
 
 code {

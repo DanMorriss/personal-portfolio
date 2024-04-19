@@ -156,9 +156,9 @@ function LandingDesktop() {
 
               <div>
                 <p>
-                  Hey, I'm Dan, a versatile Full Stack Developer with a passion
-                  for problem-solving and continuous learning. My journey into
-                  the world of tech began after years as a touring musician and
+                  Hey, I'm Dan, a Full Stack Developer with a passion for
+                  problem-solving and continuous learning. My journey into the
+                  world of tech began after years as a touring musician and
                   teacher, where I honed my skills in web development by
                   crafting websites for bands and local businesses.
                 </p>
@@ -336,7 +336,7 @@ function LandingDesktop() {
         <ParallaxLayer sticky={{ start: 5.7, end: 6 }}>
           <div className="project-description">
             <h1>Retro Mashup Mayhem</h1>
-            <h2>Classic Inspired Platform Game</h2>
+            <h2>Classic Platform Game</h2>
             <p>
               The pixel art style, synthesized sound effects, and challenging
               game-play harken back to the golden age of arcade games. Engaging
