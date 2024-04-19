@@ -13,7 +13,7 @@ h1, h2 {
 p {
   font-family: "Jersey 10", sans-serif;
   letter-spacing: 0.02rem;
-  filter: drop-shadow(0px 5px 5px rgba(211, 145, 255, 0.445));
+  filter: drop-shadow(0px 5px 5px rgba(233, 202, 255, 0.269));
 }
 
 code {

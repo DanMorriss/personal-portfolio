@@ -94,7 +94,7 @@
   }
 }
 .project-description {
-  width: 40vw;
+  width: 33vw;
   position: absolute;
   top: 20vh;
   padding-left: 3rem;
@@ -106,12 +106,12 @@
   p {
     font-family: "Jersey 10", sans-serif;
     font-size: 1.7rem;
-    filter: drop-shadow(0px 5px 5px rgba(233, 202, 255, 0.376));
     padding-top: 1rem;
 
   }
 
   .project-tech-stack {
+    width: 75%;
     img {
       height: 5rem;
       padding: 0.7rem;
