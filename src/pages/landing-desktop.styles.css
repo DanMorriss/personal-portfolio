@@ -94,10 +94,14 @@
   }
 }
 .project-description {
-  width: 33vw;
+  min-width: 475px;
+  max-width: 706px;
   position: absolute;
   top: 20vh;
   padding-left: 3rem;
+  box-shadow: 20px 20px 60px #ffffff, -20px -20px 60px #ffffff;
+  border-radius: 1rem;
+  background-color: #fffffff2;
 
   h1 {
     font-size: 4rem;
