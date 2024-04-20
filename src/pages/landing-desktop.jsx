@@ -5,7 +5,6 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
 
-import Hero from "../components/hero/hero.component";
 import "./landing-desktop.styles.css";
 
 import dan_image from "../public/images/danmorriss-image.jpg";
@@ -32,18 +31,34 @@ import barbershop_laptop from "../public/images/projects/barbershop-laptop.png";
 import barbershop_desktop from "../public/images/projects/barbershop-desktop.png";
 import retro_mashup_mayhem_laptop from "../public/images/projects/retro-mashup-mayhem-laptop.png";
 import retro_mashup_mayhem_desktop from "../public/images/projects/retro-mashup-mayhem-desktop.png";
+import mentool_mobile from "../public/images/projects/mentool-mobile.png";
+import mentool_tablet from "../public/images/projects/mentool-tablet.png";
+import mentool_laptop from "../public/images/projects/mentool-laptop.png";
+import mentool_desktop from "../public/images/projects/mentool-desktop.png";
 
 function LandingDesktop() {
   return (
     <div className="App">
-      <Parallax pages={10}>
-        <Hero />
+      <Parallax pages={11}>
+        {/* Hero Section */}
+        <div className="hero-section">
+          <ParallaxLayer offset={0.2} speed={0.4}>
+            <h1>Dan Morriss</h1>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0.5} speed={1.5}>
+            <h2>
+              <span className="poppins">{"<"}</span> Full Stack Developer{" "}
+              <span className="poppins">{"/>"}</span>
+            </h2>
+          </ParallaxLayer>
+        </div>
+
         {/* About Section */}
         <div className="about-container">
           <div className="tech-stack-images">
             {/* Tech Stack Images */}
             <div className="techStackImage">
-              <ParallaxLayer offset={2} speed={1}>
+              <ParallaxLayer offset={1.9} speed={1.1}>
                 <Image
                   src={python_logo}
                   alt="python logo"
@@ -52,7 +67,7 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage">
-              <ParallaxLayer offset={2.5} speed={0.9}>
+              <ParallaxLayer offset={2.4} speed={0.9}>
                 <Image
                   src={django_logo}
                   alt="django logo"
@@ -61,7 +76,7 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage">
-              <ParallaxLayer offset={2.2} speed={1.5}>
+              <ParallaxLayer offset={2} speed={1.4}>
                 <Image
                   src={javascript_logo}
                   alt="javascript logo"
@@ -70,12 +85,12 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage">
-              <ParallaxLayer offset={2} speed={0.8}>
+              <ParallaxLayer offset={1.9} speed={0.8}>
                 <Image src={html_logo} alt="html logo" className="html-logo" />
               </ParallaxLayer>
             </div>
-            <div className="techStackImage react-logo">
-              <ParallaxLayer offset={2.1} speed={1.7}>
+            <div className="techStackImage">
+              <ParallaxLayer offset={2} speed={1.2}>
                 <Image
                   src={react_logo}
                   alt="react logo"
@@ -83,13 +98,13 @@ function LandingDesktop() {
                 />
               </ParallaxLayer>
             </div>
-            <div className="techStackImage django-logo">
-              <ParallaxLayer offset={2.5} speed={0.6}>
+            <div className="techStackImage">
+              <ParallaxLayer offset={2.4} speed={0.6}>
                 <Image src={css_logo} alt="css logo" className="css-logo" />
               </ParallaxLayer>
             </div>
-            <div className="techStackImage rest-logo">
-              <ParallaxLayer offset={2.1} speed={0.1}>
+            <div className="techStackImage">
+              <ParallaxLayer offset={2} speed={0.1}>
                 <Image
                   src={rest_logo}
                   alt="django rest framework logo"
@@ -97,13 +112,13 @@ function LandingDesktop() {
                 />
               </ParallaxLayer>
             </div>
-            <div className="techStackImage postgresql-logo">
-              <ParallaxLayer offset={2.4} speed={1.6}>
+            <div className="techStackImage">
+              <ParallaxLayer offset={2.2} speed={1.6}>
                 <Image src={git_logo} alt="git logo" className="git-logo" />
               </ParallaxLayer>
             </div>
-            <div className="techStackImage bootstrap-logo">
-              <ParallaxLayer offset={2.2} speed={0.7}>
+            <div className="techStackImage">
+              <ParallaxLayer offset={2} speed={0.7}>
                 <Image
                   src={bootstrap_logo}
                   alt="bootstrap logo"
@@ -111,8 +126,8 @@ function LandingDesktop() {
                 />
               </ParallaxLayer>
             </div>
-            <div className="techStackImage git-logo">
-              <ParallaxLayer offset={2.1} speed={0.2}>
+            <div className="techStackImage">
+              <ParallaxLayer offset={1.9} speed={0.2}>
                 <Image
                   src={postgresql_logo}
                   alt="postgresql logo"
@@ -355,6 +370,73 @@ function LandingDesktop() {
               </Tippy>
               <Tippy content="Kaboom.js" animation="scale">
                 <Image src={kaboom_logo} alt="kaboom logo" />
+              </Tippy>
+            </div>
+          </div>
+        </ParallaxLayer>
+
+        {/* MenTool */}
+
+        <ParallaxLayer offset={9.5} speed={0.4}>
+          <Image
+            src={mentool_mobile}
+            alt="mobile view of the mentool app"
+            className="mobile-mockup"
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={9.5} speed={1}>
+          <Image
+            src={mentool_tablet}
+            alt="tablet view of the mentool app"
+            className="tablet-mockup"
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={9.5} speed={1.5}>
+          <Image
+            src={mentool_laptop}
+            alt="laptop view of the mentool app"
+            className="laptop-mockup"
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={9.5} speed={0.2}>
+          <Image
+            src={mentool_desktop}
+            alt="desktop view of the mentool app"
+            className="desktop-mockup"
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 9, end: 10 }}>
+          <div className="project-description">
+            <h1>MenTool</h1>
+            <h2>Mood Tracking App</h2>
+            <p>
+              A mood tracking app built with Python and Django as part of a
+              hackathon at Soda Social. The app is designed to support men's
+              mental health and allows users to track their mood and get support
+              when they register low moods.
+            </p>
+            <div className="project-tech-stack">
+              <Tippy content="Python" animation="scale">
+                <Image src={python_logo} alt="python logo" />
+              </Tippy>
+              <Tippy content="Django" animation="scale">
+                <Image src={django_logo} alt="django logo" />
+              </Tippy>
+              <Tippy content="PostgreSQL" animation="scale">
+                <Image src={postgresql_logo} alt="postgresql logo" />
+              </Tippy>
+              <Tippy content="Bootstrap" animation="scale">
+                <Image src={bootstrap_logo} alt="bootstrap logo" />
+              </Tippy>
+              <Tippy content="Cloudinary" animation="scale">
+                <Image src={heroku_logo} alt="heroku logo" />
+              </Tippy>
+              <Tippy content="Heroku" animation="scale">
+                <Image src={cloudinary_logo} alt="cloudinary logo" />
               </Tippy>
             </div>
           </div>
