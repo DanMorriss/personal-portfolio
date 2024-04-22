@@ -1,11 +1,15 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
+
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
 
 import "./landing-desktop.styles.css";
+
+import DanCV from "../public/DanMorrissFullStackDeveloperCV.pdf";
 
 import dan_image from "../public/images/danmorriss-image.jpg";
 import html_logo from "../public/images/html-logo.png";
@@ -35,7 +39,6 @@ import mentool_mobile from "../public/images/projects/mentool-mobile.png";
 import mentool_tablet from "../public/images/projects/mentool-tablet.png";
 import mentool_laptop from "../public/images/projects/mentool-laptop.png";
 import mentool_desktop from "../public/images/projects/mentool-desktop.png";
-import { Button } from "react-bootstrap";
 
 function LandingDesktop() {
   return (
@@ -196,7 +199,7 @@ function LandingDesktop() {
                   >
                     CONTACT ME HERE <i class="fa-solid fa-arrow-right"></i>
                   </Button>
-                  <Button className="cv-button">
+                  <Button className="cv-button" href={DanCV} target="_blank">
                     <i class="fa-solid fa-file-arrow-down"></i> DOWNLOAD CV
                   </Button>
                 </div>

@@ -7,6 +7,8 @@ import "tippy.js/animations/scale.css";
 
 import "./landing-mobile.styles.css";
 
+import DanCV from "../public/DanMorrissFullStackDeveloperCV.pdf";
+
 import dan_image from "../public/images/danmorriss-image.jpg";
 import html_logo from "../public/images/html-logo.png";
 import css_logo from "../public/images/css-logo.png";
@@ -182,7 +184,7 @@ function LandingMobile() {
                 >
                   CONTACT <i class="fa-solid fa-arrow-right"></i>
                 </Button>
-                <Button className="cv-button-sm">
+                <Button className="cv-button-sm" href={DanCV} target="_blank">
                   <i class="fa-solid fa-file-arrow-down"></i> CV
                 </Button>
               </div>
