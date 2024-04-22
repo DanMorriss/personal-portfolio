@@ -41,11 +41,11 @@
       margin-left: 10vw;
     }
 
-    .javascript-logo {
+    .html-logo {
       margin-left: 20vw;
     }
 
-    .html-logo {
+    .javascript-logo {
       margin-left: 30vw;
     }
 
@@ -88,7 +88,10 @@
     background-color: #fffffff2;
     font-size: 1.5rem;
     display: flex;
-    align-items: center;
+
+    .avatar-and-links-container {
+      padding-top: 1rem;
+    }
   }
 
   .dan-image {
@@ -117,6 +120,28 @@
       height: 3rem;
       padding: 5px;
     }
+  }
+
+  .contact-button {
+    border-radius: 3rem;
+    margin: 1rem;
+    background-color: rgba(44, 2, 73, 0.9);
+    font-size: 1.3rem;
+    color: rgb(224, 177, 255);
+    padding: 0.4rem 2.5rem 0.4rem 2.5rem;
+    font-family: "Jersey 10", sans-serif;
+  }
+
+  .cv-button {
+    
+    border-radius: 3rem;
+    margin: 1rem;
+    border-color: rgb(101, 1, 168);
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: rgb(101, 1, 168);
+    font-family: "Jersey 10", sans-serif;
+    padding: 0 2.5rem 0 2.5rem;
   }
 }
 .project-description {

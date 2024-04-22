@@ -1,0 +1,235 @@
+.hero-section-sm {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .poppins {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.089));
+  }
+}
+
+.techStackImage-sm {
+  padding: 1rem;
+  height: 6rem;
+}
+
+.python-logo {
+  margin-left: 0vw;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.django-logo {
+  margin-left: 5vw;
+  margin-top: 15rem;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.html-logo {
+  margin-left: 20vw;
+  margin-top: 20rem;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.javascript-logo {
+  margin-left: 12vw;
+  margin-top: 15rem;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.react-logo {
+  margin-left: 30vw;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.css-logo {
+  margin-left: 50vw;
+  margin-top: 15rem;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.rest-logo {
+  margin-left: 50vw;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.git-logo {
+  margin-left: 60vw;
+  margin-top: 10rem;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.bootstrap-logo {
+  margin-left: 75vw;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+.postgresql-logo {
+  margin-left: 70vw;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+}
+
+
+
+.dan-image-sm{
+  height: 50vw;
+  margin-left: 25vw;
+  filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+}
+.about-text-sm {
+  p {
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+.tech-stack-images-sm {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+
+  .tech-stack-images-sub-container-sm {
+    display: flex;
+    justify-content: space-around;
+  }
+  .techStackImage-sm {
+    padding: 0.5rem;
+    img {
+      height: 3rem;
+      filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+    }
+  }
+}
+.links-container-sm {
+  text-align: center;
+  a {
+    i {
+      margin: 0.6rem;
+      font-size: 2.5rem;
+      color: rgb(101, 1, 168);
+      transition: 0.3s;
+      filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.314));
+
+    }
+
+    i:hover {
+      color: rgb(185, 121, 228);
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+  }
+}
+.contact-buttons-sm {
+  display: flex;
+  justify-content: space-between;
+  .contact-button-sm {
+    width: 50%;
+    border-radius: 3rem;
+    margin: 0.2rem;
+    background-color: rgba(44, 2, 73, 0.9);
+    font-size: 1.3rem;
+    color: rgb(224, 177, 255);
+    padding: 0.4rem 2.5rem 0.4rem 2.5rem;
+    font-family: "Jersey 10", sans-serif;
+  }
+
+  .cv-button-sm {
+    width: 50%;
+    border-radius: 3rem;
+    margin: 0.2rem;
+    border-color: rgb(101, 1, 168);
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: rgb(101, 1, 168);
+    font-family: "Jersey 10", sans-serif;
+    padding: 0 2.5rem 0 2.5rem;
+  }
+}
+
+
+.project-title-sm {
+  padding: 1rem;
+  background-color: #ffffffe6;
+  box-shadow: 20px 20px 60px #ffffff, -20px -20px 60px #ffffff;
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+.project-description-sm {
+  padding: 1rem;
+  box-shadow: 20px 20px 60px #ffffff, -20px -20px 60px #ffffff;
+  border-radius: 1rem;
+  background-color: #ffffffc1;
+
+  p {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+  }
+
+  .project-tech-stack-sm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 5rem;
+      padding: 0.7rem;
+      filter: drop-shadow(0px 5px 5px rgba(66, 0, 110, 0.247));
+
+    }
+  }
+}
+
+.mobile-mockup-sm {
+  width: 100%;
+}
+
+.tablet-mockup-sm {
+  width: 100%;
+}
+
+.laptop-mockup-sm {
+  width: 100%;
+
+}
+
+.desktop-mockup-sm {
+  width: 100%;
+
+}
+
+
+.retro-laptop-mockup-sm {
+  width: 100%;
+
+}
+
+.retro-desktop-mockup-sm {
+  width: 100%;
+
+}

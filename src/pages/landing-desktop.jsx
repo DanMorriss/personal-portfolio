@@ -35,10 +35,11 @@ import mentool_mobile from "../public/images/projects/mentool-mobile.png";
 import mentool_tablet from "../public/images/projects/mentool-tablet.png";
 import mentool_laptop from "../public/images/projects/mentool-laptop.png";
 import mentool_desktop from "../public/images/projects/mentool-desktop.png";
+import { Button } from "react-bootstrap";
 
 function LandingDesktop() {
   return (
-    <div className="App">
+    <div className="LandingDesktop">
       <Parallax pages={11}>
         {/* Hero Section */}
         <div className="hero-section">
@@ -67,7 +68,7 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage">
-              <ParallaxLayer offset={2.4} speed={0.9}>
+              <ParallaxLayer offset={2} speed={0.2}>
                 <Image
                   src={django_logo}
                   alt="django logo"
@@ -77,6 +78,11 @@ function LandingDesktop() {
             </div>
             <div className="techStackImage">
               <ParallaxLayer offset={2} speed={1.4}>
+                <Image src={html_logo} alt="html logo" className="html-logo" />
+              </ParallaxLayer>
+            </div>
+            <div className="techStackImage">
+              <ParallaxLayer offset={1.9} speed={0.8}>
                 <Image
                   src={javascript_logo}
                   alt="javascript logo"
@@ -85,12 +91,7 @@ function LandingDesktop() {
               </ParallaxLayer>
             </div>
             <div className="techStackImage">
-              <ParallaxLayer offset={1.9} speed={0.8}>
-                <Image src={html_logo} alt="html logo" className="html-logo" />
-              </ParallaxLayer>
-            </div>
-            <div className="techStackImage">
-              <ParallaxLayer offset={2} speed={1.2}>
+              <ParallaxLayer offset={2} speed={0.2}>
                 <Image
                   src={react_logo}
                   alt="react logo"
@@ -142,7 +143,7 @@ function LandingDesktop() {
         <ParallaxLayer sticky={{ start: 1, end: 2 }}>
           <div className="about-container">
             <div className="about-card">
-              <div>
+              <div className="avatar-and-links-container">
                 <Image
                   src={dan_image}
                   roundedCircle
@@ -150,22 +151,26 @@ function LandingDesktop() {
                   alt="avatar image of Dan"
                 />
                 <div className="links-container">
-                  <a
-                    href="https://github.com/danmorriss"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="github link"
-                  >
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/morrissdaniel/"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="linkedin link"
-                  >
-                    <i className="fa-brands fa-linkedin"></i>
-                  </a>
+                  <Tippy content="Github">
+                    <a
+                      href="https://github.com/danmorriss"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="github link"
+                    >
+                      <i className="fa-brands fa-github"></i>
+                    </a>
+                  </Tippy>
+                  <Tippy content="LinkedIn">
+                    <a
+                      href="https://www.linkedin.com/in/morrissdaniel/"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="linkedin link"
+                    >
+                      <i className="fa-brands fa-linkedin"></i>
+                    </a>
+                  </Tippy>
                 </div>
               </div>
 
@@ -184,6 +189,17 @@ function LandingDesktop() {
                   technical skills to build dynamic, scalable websites while
                   leveraging my background in creativity and adaptability.
                 </p>
+                <div className="d-flex">
+                  <Button
+                    className="contact-button"
+                    href="mailto:danielmorriss1@gmail.com"
+                  >
+                    CONTACT ME HERE <i class="fa-solid fa-arrow-right"></i>
+                  </Button>
+                  <Button className="cv-button">
+                    <i class="fa-solid fa-file-arrow-down"></i> DOWNLOAD CV
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
