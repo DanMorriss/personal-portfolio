@@ -1,12 +1,21 @@
 @import "~bootstrap/scss/bootstrap";
 
-// .landing-desktop {
-//   display: none;
-// }
+@media (max-width: 768px) {
+  .landing-mobile {
+    display: block;
+  }
 
-// .landing-mobile {
-//   display: none;
-// }
+  .landing-desktop {
+    display: none;
+  }
+}
 
-// @media (max-width: 768px) {
-// }
+@media (min-width: 768px) {
+  .landing-mobile {
+    display: none;
+  }
+
+  .landing-desktop {
+    display: block;
+  }
+}

@@ -2,7 +2,6 @@ import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
-
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
@@ -10,7 +9,6 @@ import "tippy.js/animations/scale.css";
 import "./landing-desktop.styles.css";
 
 import DanCV from "../public/DanMorrissFullStackDeveloperCV.pdf";
-
 import dan_image from "../public/images/danmorriss-image.jpg";
 import html_logo from "../public/images/html-logo.png";
 import css_logo from "../public/images/css-logo.png";
@@ -42,7 +40,7 @@ import mentool_desktop from "../public/images/projects/mentool-desktop.png";
 
 function LandingDesktop() {
   return (
-    <div className="LandingDesktop">
+    <div className="landing-desktop">
       <Parallax pages={11}>
         {/* Hero Section */}
         <div className="hero-section">
@@ -245,7 +243,14 @@ function LandingDesktop() {
 
         <ParallaxLayer sticky={{ start: 3, end: 4 }}>
           <div className="project-description">
-            <h1>Highlights</h1>
+            <a
+              href="https://pp5-highlights-a86c2f8f4016.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-title-link"
+            >
+              <h1>Highlights</h1>
+            </a>
             <h2>Social Network</h2>
             <p>
               A photo sharing social media platform. Inspired by the principles
@@ -318,7 +323,14 @@ function LandingDesktop() {
 
         <ParallaxLayer sticky={{ start: 5, end: 6 }}>
           <div className="project-description">
-            <h1>Nick's Barbershop</h1>
+            <a
+              href="https://niallsbarbershop-e4e7dc2878db.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-title-link"
+            >
+              <h1>Nick's Barbershop</h1>
+            </a>
             <h2>Website & Booking System</h2>
             <p>
               A website with a booking system that allows customers to book,
@@ -369,7 +381,14 @@ function LandingDesktop() {
 
         <ParallaxLayer sticky={{ start: 7, end: 8 }}>
           <div className="project-description">
-            <h1>Retro Mashup Mayhem</h1>
+            <a
+              href="https://retro-mashup-mayhem.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-title-link"
+            >
+              <h1>Retro Mashup Mayhem</h1>
+            </a>
             <h2>Classic Platform Game</h2>
             <p>
               The pixel art style, synthesized sound effects, and challenging
@@ -430,7 +449,14 @@ function LandingDesktop() {
 
         <ParallaxLayer sticky={{ start: 9, end: 10 }}>
           <div className="project-description">
-            <h1>MenTool</h1>
+            <a
+              href="https://mentool-2af96fd6f7e7.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-title-link"
+            >
+              <h1>MenTool</h1>
+            </a>
             <h2>Mood Tracking App</h2>
             <p>
               A mood tracking app built with Python and Django as part of a

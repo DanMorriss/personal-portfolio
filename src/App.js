@@ -5,8 +5,8 @@ import LandingMobile from "./pages/landing-mobile";
 function App() {
   return (
     <div className="App">
-      <LandingDesktop className="d-none d-md-block" />
-      {/* <LandingMobile className="d-md-none" /> */}
+      <LandingMobile className="landing-mobile" />
+      <LandingDesktop className="landing-desktop" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
@@ -8,7 +9,6 @@ import "tippy.js/animations/scale.css";
 import "./landing-mobile.styles.css";
 
 import DanCV from "../public/DanMorrissFullStackDeveloperCV.pdf";
-
 import dan_image from "../public/images/danmorriss-image.jpg";
 import html_logo from "../public/images/html-logo.png";
 import css_logo from "../public/images/css-logo.png";
@@ -24,20 +24,9 @@ import cloudinary_logo from "../public/images/cloudinary-logo.png";
 import heroku_logo from "../public/images/heroku-logo.png";
 import kaboom_logo from "../public/images/kaboom-logo.png";
 import highlights_mobile from "../public/images/projects/highlights-mobile.png";
-import highlights_tablet from "../public/images/projects/highlights-tablet.png";
-import highlights_laptop from "../public/images/projects/highlights-laptop.png";
-import highlights_desktop from "../public/images/projects/highlights-desktop.png";
 import barbershop_mobile from "../public/images/projects/barbershop-mobile.png";
-import barbershop_tablet from "../public/images/projects/barbershop-tablet.png";
-import barbershop_laptop from "../public/images/projects/barbershop-laptop.png";
-import barbershop_desktop from "../public/images/projects/barbershop-desktop.png";
 import retro_mashup_mayhem_laptop from "../public/images/projects/retro-mashup-mayhem-laptop.png";
-import retro_mashup_mayhem_desktop from "../public/images/projects/retro-mashup-mayhem-desktop.png";
-import mentool_mobile from "../public/images/projects/mentool-mobile.png";
 import mentool_tablet from "../public/images/projects/mentool-tablet.png";
-import mentool_laptop from "../public/images/projects/mentool-laptop.png";
-import mentool_desktop from "../public/images/projects/mentool-desktop.png";
-import { Button } from "react-bootstrap";
 
 function LandingMobile() {
   return (
@@ -206,75 +195,6 @@ function LandingMobile() {
                 leveraging my background in creativity and adaptability.
               </p>
             </div>
-
-            {/* <div className="tech-stack-images-sm">
-              <div className="tech-stack-images-sub-container-sm">
-                <div className="techStackImage-sm">
-                  <Image
-                    src={html_logo}
-                    alt="html logo"
-                    className="html-logo"
-                  />
-                </div>
-                <div className="techStackImage-sm">
-                  <Image src={css_logo} alt="css logo" className="css-logo" />
-                </div>
-                <div className="techStackImage-sm">
-                  <Image
-                    src={javascript_logo}
-                    alt="javascript logo"
-                    className="javascript-logo"
-                  />
-                </div>
-                <div className="techStackImage-sm">
-                  <Image
-                    src={python_logo}
-                    alt="python logo"
-                    className="python-logo"
-                  />
-                </div>
-                <div className="techStackImage-sm">
-                  <Image
-                    src={react_logo}
-                    alt="react logo"
-                    className="react-logo"
-                  />
-                </div>
-              </div>
-              <div className="tech-stack-images-sub-container-sm">
-                <div className="techStackImage-sm">
-                  <Image
-                    src={django_logo}
-                    alt="django logo"
-                    className="django-logo"
-                  />
-                </div>
-                <div className="techStackImage-sm">
-                  <Image
-                    src={rest_logo}
-                    alt="django rest framework logo"
-                    className="rest-logo"
-                  />
-                </div>
-                <div className="techStackImage-sm">
-                  <Image src={git_logo} alt="git logo" className="git-logo" />
-                </div>
-                <div className="techStackImage-sm">
-                  <Image
-                    src={bootstrap_logo}
-                    alt="bootstrap logo"
-                    className="bootstrap-logo"
-                  />
-                </div>
-                <div className="techStackImage-sm">
-                  <Image
-                    src={postgresql_logo}
-                    alt="postgresql logo"
-                    className="postgresql-logo"
-                  />
-                </div>
-              </div>
-            </div> */}
           </div>
         </ParallaxLayer>
 
@@ -282,7 +202,14 @@ function LandingMobile() {
         {/* Highlights */}
         <ParallaxLayer sticky={{ start: 3, end: 4.2 }}>
           <div className="project-title-sm">
-            <h1>Highlights</h1>
+            <a
+              href="https://pp5-highlights-a86c2f8f4016.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-title-link"
+            >
+              <h1>Highlights</h1>
+            </a>
             <h2>Social Network</h2>
           </div>
         </ParallaxLayer>
@@ -318,29 +245,18 @@ function LandingMobile() {
           />
         </ParallaxLayer>
 
-        {/* <Image
-          src={highlights_tablet}
-          alt="tablet view of the highlights site"
-          className="tablet-mockup-sm"
-        />
-
-        <Image
-          src={highlights_laptop}
-          alt="laptop view of the highlights site"
-          className="laptop-mockup-sm"
-        />
-
-        <Image
-          src={highlights_desktop}
-          alt="desktop view of the highlights site"
-          className="desktop-mockup-sm"
-        /> */}
-
         {/* Nick's Barbershop */}
 
         <ParallaxLayer sticky={{ start: 5, end: 6.2 }}>
           <div className="project-title-sm">
-            <h1>Nick's Barbershop</h1>
+            <a
+              href="https://niallsbarbershop-e4e7dc2878db.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-title-link"
+            >
+              <h1>Nick's Barbershop</h1>
+            </a>
             <h2>Website & Booking System</h2>
           </div>
         </ParallaxLayer>
@@ -382,32 +298,18 @@ function LandingMobile() {
             className="mobile-mockup-sm"
           />
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={5.5} speed={1}>
-          <Image
-            src={barbershop_tablet}
-            alt="tablet view of the barbershop site"
-            className="tablet-mockup-sm"
-          />
-        </ParallaxLayer>
-        <ParallaxLayer offset={5.7} speed={1}>
-          <Image
-            src={barbershop_laptop}
-            alt="laptop view of the barbershop site"
-            className="laptop-mockup-sm"
-          />
-        </ParallaxLayer>
-        <ParallaxLayer offset={5.9} speed={1}>
-          <Image
-            src={barbershop_desktop}
-            alt="desktop view of the barbershop site"
-            className="desktop-mockup-sm"
-          />
-        </ParallaxLayer> */}
 
         {/* Retro Mashup Mayhem */}
         <ParallaxLayer sticky={{ start: 7.2, end: 8 }}>
           <div className="project-title-sm">
-            <h1>Retro Mashup Mayhem</h1>
+            <a
+              href="https://retro-mashup-mayhem.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-title-link"
+            >
+              <h1>Retro Mashup Mayhem</h1>
+            </a>
             <h2>Classic Platform Game</h2>
           </div>
         </ParallaxLayer>
@@ -443,18 +345,18 @@ function LandingMobile() {
             className="retro-laptop-mockup-sm"
           />
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={7.5} speed={1}>
-          <Image
-            src={retro_mashup_mayhem_desktop}
-            alt="desktop view of retro mashup mayhem"
-            className="retro-desktop-mockup-sm"
-          />
-        </ParallaxLayer> */}
 
         {/* MenTool */}
         <ParallaxLayer sticky={{ start: 9, end: 10 }}>
           <div className="project-title-sm">
-            <h1>MenTool</h1>
+            <a
+              href="https://mentool-2af96fd6f7e7.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-title-link"
+            >
+              <h1>MenTool</h1>
+            </a>
             <h2>Mood Tracking App</h2>
           </div>
         </ParallaxLayer>
