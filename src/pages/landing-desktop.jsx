@@ -45,10 +45,10 @@ function LandingDesktop() {
         {/* Hero Section */}
         <div className="hero-section">
           <ParallaxLayer offset={0.2} speed={0.4}>
-            <h1 className="scale-in-center">Dan Morriss</h1>
+            <h1 className="tracking-in-expand">Dan Morriss</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={0.5} speed={1.5}>
-            <h2 className="scale-in-center">
+            <h2 className="text-focus-in">
               <span className="poppins">{"<"}</span> Full Stack Developer{" "}
               <span className="poppins">{"/>"}</span>
             </h2>
@@ -491,52 +491,58 @@ function LandingDesktop() {
         <ParallaxLayer offset={11}>
           <div className="footer">
             <div className="footer-buttons-line">
-              <a
-                className="contact-button-footer"
-                href="mailto:danielmorriss1@gmail.com"
-                aria-label="email me link"
-              >
-                <i className="fa-solid fa-envelope"></i>
-              </a>
-
-              <a
-                className="contact-button-footer"
-                href={DanCV}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  fill="currentColor"
-                  class="bi bi-file-earmark-person-fill"
-                  viewBox="0 0 16 16"
+              <Tippy content="email me">
+                <a
+                  className="contact-button-footer"
+                  href="mailto:danielmorriss1@gmail.com"
+                  aria-label="email me link"
                 >
-                  <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755" />
-                </svg>
-              </a>
+                  <i className="fa-solid fa-envelope flicker-1"></i>
+                </a>
+              </Tippy>
+              <Tippy content="download my CV">
+                <a
+                  className="contact-button-footer"
+                  href={DanCV}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    class="bi bi-file-earmark-person-fill flicker-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755" />
+                  </svg>
+                </a>
+              </Tippy>
             </div>
             <div className="footer-buttons-line-sm">
-              <a
-                href="https://github.com/danmorriss"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="github link"
-                className="github-link-footer"
-              >
-                <i className="fa-brands fa-github"></i>
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/morrissdaniel/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="linkedin link"
-                className="linkedin-link-footer"
-              >
-                <i className="fa-brands fa-linkedin"></i>
-              </a>
+              <Tippy content="github">
+                <a
+                  href="https://github.com/danmorriss"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="github link"
+                  className="github-link-footer"
+                >
+                  <i className="fa-brands fa-github flicker-3"></i>
+                </a>
+              </Tippy>
+              <Tippy content="linkedin">
+                <a
+                  href="https://www.linkedin.com/in/morrissdaniel/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="linkedin link"
+                  className="linkedin-link-footer"
+                >
+                  <i className="fa-brands fa-linkedin flicker-4"></i>
+                </a>
+              </Tippy>
             </div>
           </div>
         </ParallaxLayer>

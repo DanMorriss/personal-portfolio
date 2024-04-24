@@ -35,10 +35,10 @@ function LandingMobile() {
         {/* Hero Section */}
         <div className="hero-section-sm">
           <ParallaxLayer offset={0.2} speed={0.5}>
-            <h1 className="scale-in-center">Dan Morriss</h1>
+            <h1 className="tracking-in-expand">Dan Morriss</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={0.5} speed={1.5}>
-            <h2 className="scale-in-center">
+            <h2 className="text-focus-in">
               <span className="poppins">{"<"}</span> Full Stack Developer{" "}
               <span className="poppins">{"/>"}</span>
             </h2>
@@ -415,7 +415,7 @@ function LandingMobile() {
                 href="mailto:danielmorriss1@gmail.com"
                 aria-label="email me link"
               >
-                <i className="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope flicker-1"></i>
               </a>
 
               <a
@@ -429,7 +429,7 @@ function LandingMobile() {
                   width="50"
                   height="50"
                   fill="currentColor"
-                  class="bi bi-file-earmark-person-fill"
+                  class="bi bi-file-earmark-person-fill flicker-2"
                   viewBox="0 0 16 16"
                 >
                   <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755" />
@@ -444,7 +444,7 @@ function LandingMobile() {
                 aria-label="github link"
                 className="github-link-footer-sm"
               >
-                <i className="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github flicker-3"></i>
               </a>
 
               <a
@@ -454,7 +454,7 @@ function LandingMobile() {
                 aria-label="linkedin link"
                 className="linkedin-link-footer-sm"
               >
-                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin flicker-4"></i>
               </a>
             </div>
           </div>
