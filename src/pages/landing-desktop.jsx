@@ -159,7 +159,7 @@ function LandingDesktop() {
                       rel="noreferrer"
                       aria-label="github link"
                     >
-                      <i className="fa-brands fa-github"></i>
+                      <i className="fa-brands fa-github flicker-1"></i>
                     </a>
                   </Tippy>
                   <Tippy content="LinkedIn">
@@ -169,7 +169,7 @@ function LandingDesktop() {
                       rel="noreferrer"
                       aria-label="linkedin link"
                     >
-                      <i className="fa-brands fa-linkedin"></i>
+                      <i className="fa-brands fa-linkedin flicker-3"></i>
                     </a>
                   </Tippy>
                 </div>
@@ -249,7 +249,7 @@ function LandingDesktop() {
               rel="noreferrer"
               className="project-title-link"
             >
-              <h1>Highlights</h1>
+              <h1 className="project-title flicker-1">Highlights</h1>
             </a>
             <h2>Social Network</h2>
             <p>
@@ -329,7 +329,7 @@ function LandingDesktop() {
               rel="noreferrer"
               className="project-title-link"
             >
-              <h1>Nick's Barbershop</h1>
+              <h1 className="project-title flicker-1">Nick's Barbershop</h1>
             </a>
             <h2>Website & Booking System</h2>
             <p>
@@ -387,7 +387,7 @@ function LandingDesktop() {
               rel="noreferrer"
               className="project-title-link"
             >
-              <h1>Retro Mashup Mayhem</h1>
+              <h1 className="project-title flicker-1">Retro Mashup Mayhem</h1>
             </a>
             <h2>Classic Platform Game</h2>
             <p>
@@ -455,7 +455,7 @@ function LandingDesktop() {
               rel="noreferrer"
               className="project-title-link"
             >
-              <h1>MenTool</h1>
+              <h1 className="project-title flicker-1">MenTool</h1>
             </a>
             <h2>Mood Tracking App</h2>
             <p>
