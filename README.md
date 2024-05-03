@@ -75,6 +75,8 @@ Install sass
 npm i sass --save-dev
 ```
 
-https://react-scroll-parallax.damnthat.tv/docs/intro
+[React Scroll Parallax](https://react-scroll-parallax.damnthat.tv/docs/intro)
 
-https://github.com/atomiks/tippyjs-react
+[Tippy.js](https://github.com/atomiks/tippyjs-react)
+
+[Framer Motion](https://www.npmjs.com/package/framer-motion)

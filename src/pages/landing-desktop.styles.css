@@ -68,7 +68,9 @@
   margin-left: 90vw;
 }
 
-.about-container {
+/* ABOUT SECTION */
+
+/* .about-container {
   display: flex;
   justify-content: center;
 }
@@ -148,7 +150,9 @@
 
 .cv-button i {
   margin-right: 1rem;
-}
+} */
+
+/* PROJECTS */
 
 .project-title-link {
   text-decoration: none;
