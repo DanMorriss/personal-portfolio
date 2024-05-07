@@ -6,6 +6,7 @@ import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
 
 import AboutDan from "../components/about-dan/about-dan.component";
+import ProjectDescription from "../components/projects/project-description.component";
 
 import "./landing-desktop.styles.css";
 
@@ -37,6 +38,7 @@ import mentool_mobile from "../public/images/projects/mentool-mobile.png";
 import mentool_tablet from "../public/images/projects/mentool-tablet.png";
 import mentool_laptop from "../public/images/projects/mentool-laptop.png";
 import mentool_desktop from "../public/images/projects/mentool-desktop.png";
+import TechStackLanguage from "../components/tech-stack/tech-stack-language.component";
 
 function LandingDesktop() {
   return (
@@ -197,31 +199,29 @@ function LandingDesktop() {
               space to share the highlights of their day and connect with other.
             </p>
             <div className="project-tech-stack">
-              <Tippy content="JavaScript" animation="scale">
-                <Image src={javascript_logo} alt="javascript logo" />
-              </Tippy>
-              <Tippy content="React" animation="scale">
-                <Image
-                  src={react_logo}
-                  alt="react logo"
-                  className="logo-small"
-                />
-              </Tippy>
-              <Tippy content="Django REST Framework" animation="scale">
-                <Image src={rest_logo} alt="django rest framework logo" />
-              </Tippy>
-              <Tippy content="PostgreSQL" animation="scale">
-                <Image src={postgresql_logo} alt="postgresql logo" />
-              </Tippy>
-              <Tippy content="Bootstrap" animation="scale">
-                <Image src={bootstrap_logo} alt="bootstrap logo" />
-              </Tippy>
-              <Tippy content="Cloudinary" animation="scale">
-                <Image src={cloudinary_logo} alt="cloudinary logo" />
-              </Tippy>
-              <Tippy content="Heroku" animation="scale">
-                <Image src={heroku_logo} alt="heroku logo" />
-              </Tippy>
+              <TechStackLanguage
+                framework="JavaScript"
+                logo={javascript_logo}
+              />
+              <TechStackLanguage framework="React" logo={react_logo} />
+              <TechStackLanguage framework="Python" logo={python_logo} />
+              <TechStackLanguage
+                framework="Django REST Framework"
+                logo={rest_logo}
+              />
+              <TechStackLanguage
+                framework="PostgreSQL"
+                logo={postgresql_logo}
+              />
+              <TechStackLanguage framework="Bootstrap" logo={bootstrap_logo} />
+              <TechStackLanguage
+                framework="Cloudinary"
+                logo={cloudinary_logo}
+              />
+              <TechStackLanguage framework="Heroku" logo={heroku_logo} />
+              <TechStackLanguage framework="Git" logo={git_logo} />
+              <TechStackLanguage framework="HTML" logo={html_logo} />
+              <TechStackLanguage framework="CSS" logo={css_logo} />
             </div>
           </div>
         </ParallaxLayer>
@@ -278,24 +278,21 @@ function LandingDesktop() {
               customers.
             </p>
             <div className="project-tech-stack">
-              <Tippy content="Python" animation="scale">
-                <Image src={python_logo} alt="python logo" />
-              </Tippy>
-              <Tippy content="Django" animation="scale">
-                <Image src={django_logo} alt="django logo" />
-              </Tippy>
-              <Tippy content="PostgreSQL" animation="scale">
-                <Image src={postgresql_logo} alt="postgresql logo" />
-              </Tippy>
-              <Tippy content="Bootstrap" animation="scale">
-                <Image src={bootstrap_logo} alt="bootstrap logo" />
-              </Tippy>
-              <Tippy content="Cloudinary" animation="scale">
-                <Image src={heroku_logo} alt="heroku logo" />
-              </Tippy>
-              <Tippy content="Heroku" animation="scale">
-                <Image src={cloudinary_logo} alt="cloudinary logo" />
-              </Tippy>
+              <TechStackLanguage framework="Python" logo={python_logo} />
+              <TechStackLanguage framework="Django" logo={django_logo} />
+              <TechStackLanguage
+                framework="PostgreSQL"
+                logo={postgresql_logo}
+              />
+              <TechStackLanguage framework="HTML" logo={html_logo} />
+              <TechStackLanguage framework="CSS" logo={css_logo} />
+              <TechStackLanguage framework="Bootstrap" logo={bootstrap_logo} />
+              <TechStackLanguage framework="Git" logo={git_logo} />
+              <TechStackLanguage framework="Heroku" logo={heroku_logo} />
+              <TechStackLanguage
+                framework="Cloudinary"
+                logo={cloudinary_logo}
+              />
             </div>
           </div>
         </ParallaxLayer>
@@ -336,18 +333,14 @@ function LandingDesktop() {
               offer players an authentic and thrilling experience.
             </p>
             <div className="project-tech-stack">
-              <Tippy content="HTML" animation="scale">
-                <Image src={html_logo} alt="html logo" />
-              </Tippy>
-              <Tippy content="CSS" animation="scale">
-                <Image src={css_logo} alt="css logo" />
-              </Tippy>
-              <Tippy content="JavaScript" animation="scale">
-                <Image src={javascript_logo} alt="javascript logo" />
-              </Tippy>
-              <Tippy content="Kaboom.js" animation="scale">
-                <Image src={kaboom_logo} alt="kaboom logo" />
-              </Tippy>
+              <TechStackLanguage framework="HTML" logo={html_logo} />
+              <TechStackLanguage framework="CSS" logo={css_logo} />
+              <TechStackLanguage
+                framework="JavaScript"
+                logo={javascript_logo}
+              />
+              <TechStackLanguage framework="Kaboom.js" logo={kaboom_logo} />
+              <TechStackLanguage framework="Git" logo={git_logo} />
             </div>
           </div>
         </ParallaxLayer>
@@ -404,24 +397,21 @@ function LandingDesktop() {
               when they register low moods.
             </p>
             <div className="project-tech-stack">
-              <Tippy content="Python" animation="scale">
-                <Image src={python_logo} alt="python logo" />
-              </Tippy>
-              <Tippy content="Django" animation="scale">
-                <Image src={django_logo} alt="django logo" />
-              </Tippy>
-              <Tippy content="PostgreSQL" animation="scale">
-                <Image src={postgresql_logo} alt="postgresql logo" />
-              </Tippy>
-              <Tippy content="Bootstrap" animation="scale">
-                <Image src={bootstrap_logo} alt="bootstrap logo" />
-              </Tippy>
-              <Tippy content="Cloudinary" animation="scale">
-                <Image src={heroku_logo} alt="heroku logo" />
-              </Tippy>
-              <Tippy content="Heroku" animation="scale">
-                <Image src={cloudinary_logo} alt="cloudinary logo" />
-              </Tippy>
+              <TechStackLanguage framework="HTML" logo={html_logo} />
+              <TechStackLanguage framework="CSS" logo={css_logo} />
+              <TechStackLanguage framework="Python" logo={python_logo} />
+              <TechStackLanguage framework="Django" logo={django_logo} />
+              <TechStackLanguage
+                framework="PostgreSQL"
+                logo={postgresql_logo}
+              />
+              <TechStackLanguage framework="Bootstrap" logo={bootstrap_logo} />
+              <TechStackLanguage framework="Git" logo={git_logo} />
+              <TechStackLanguage framework="Heroku" logo={heroku_logo} />
+              <TechStackLanguage
+                framework="Cloudinary"
+                logo={cloudinary_logo}
+              />
             </div>
           </div>
         </ParallaxLayer>

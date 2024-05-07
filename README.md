@@ -80,3 +80,7 @@ npm i sass --save-dev
 [Tippy.js](https://github.com/atomiks/tippyjs-react)
 
 [Framer Motion](https://www.npmjs.com/package/framer-motion)
+
+```
+npm install framer-motion
+```
