@@ -4,9 +4,10 @@ import Image from "react-bootstrap/Image";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
+import { motion } from "framer-motion";
 
 import AboutDan from "../components/about-dan/about-dan.component";
-import ProjectDescription from "../components/projects/project-description.component";
+import TechStackLanguage from "../components/tech-stack/tech-stack-language.component";
 
 import "./landing-desktop.styles.css";
 
@@ -38,7 +39,6 @@ import mentool_mobile from "../public/images/projects/mentool-mobile.png";
 import mentool_tablet from "../public/images/projects/mentool-tablet.png";
 import mentool_laptop from "../public/images/projects/mentool-laptop.png";
 import mentool_desktop from "../public/images/projects/mentool-desktop.png";
-import TechStackLanguage from "../components/tech-stack/tech-stack-language.component";
 
 function LandingDesktop() {
   return (
