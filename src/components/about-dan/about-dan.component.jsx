@@ -1,6 +1,6 @@
 import Image from "react-bootstrap/Image";
 import Tippy from "@tippyjs/react";
-import dan_image from "../../public/images/danmorriss-image.jpg";
+import dan_image from "../../public/images/DanMorrissAvatar.jpg";
 import Button from "react-bootstrap/Button";
 
 import "./about-dan.styles.css";
